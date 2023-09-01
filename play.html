@@ -35,12 +35,13 @@ if (getURL == "") {location.href="https://bit.ly/adrenalinagolapp";}
 <script type="text/javascript">
 var mt = '';
 var playerInstance=jwplayer("player");
+var imageFallbackUrl = "https://i.imgur.com/R1sg8Ab.png";
 
 playerInstance.setup({
   playlist: [{
     "title": "AdrenalinaGol | Twitter: @nodoapps",
     "description": "https://bit.ly/adrenalinagolapp",
-    "image": getIMG,
+    "image": getIMG || imageFallbackUrl,
     "sources": [{
       "default": false,
       "type": "dash",
