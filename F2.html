@@ -1,0 +1,362 @@
+<html>
+    <head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q6NFESW41F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q6NFESW41F');
+</script>
+        <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+      <meta content="30" http-equiv="refresh"></meta>
+<meta content="no-cache" http-equiv="cache-control"></meta>
+<meta content="no-cache" http-equiv="Pragma"></meta>
+<meta content="-1" http-equiv="expires"></meta>
+        <title>MotoPlay</title>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/3d08aa0f5f.js"></script>
+
+    <style type="text/css">
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos de encabezado */
+        header {
+            background-image: url('https://i.ibb.co/Zd7KtdG/formula-1-logo-uhd-4k-wallpaper-1.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .app-name {
+            margin-top: 5px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        /* Estilos del menú */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    width: 100%; /* Todos los elementos ocupan el mismo ancho */
+    margin-bottom: 10px; /* Agregar espacio vertical entre los elementos */
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  background-color: #00B3FF;
+  color: #fff;
+}
+
+.channel-logo {
+    width: 30px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 30px;
+    object-fit: contain; /* Evita distorsiones y mantiene la proporción */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.item-content {
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.item {
+    text-align: center;
+}
+
+.item h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.item small {
+    font-size: 12px;
+    color: red;
+}
+
+        /* Estilos de contenido */
+        main {
+            padding: 20px;
+        }
+
+        /* Estilos de redes sociales */
+     .social-media-icon {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+    .social-media-space {
+        width: 10px; /* Ajusta el espacio entre los iconos según tus preferencias */
+        height: 1px;
+        background-color: transparent;
+        display: inline-block;
+    }
+
+        @media (max-width: 768px) {
+            header {
+                background-size: 37%;
+            }
+        }
+/*aviso*/
+.aviso {
+  background-color: #ffcc00;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/*hora*/
+      .current-time {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+ /* Estilos del popup */
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+  }
+
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: blue;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .close:hover {
+    color: red;
+  }
+        .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción del video (16:9) */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+    </style>
+    </head>
+  <body>
+  <header>
+    <div class="logo-container">
+      <img alt="Logo del App" class="logo" src="https://i.postimg.cc/7hJcP4W6/apppeoe.jpg" />
+      <h1 class="app-name">MotoPlay</h1>
+    </div>
+    <a class="social-media-icon" href="https://twitter.com/nodoapps" target="_blank">
+  <img alt="Twitter" class="social-icon" src="https://i.imgur.com/6IYRcCu.png" />
+</a>
+    <a class="social-media-icon" href="https://instagram.com/newsnodo" target="_blank">
+  <img alt="Telegram" class="social-icon" src="https://logotipoz.com/wp-content/uploads/2021/10/instagram-png.png" />
+</a>
+<a class="social-media-icon" href="https://t.me/motoplayapp" target="_blank">
+  <img alt="Telegram" class="social-icon" src="https://i.imgur.com/85L3j0R.png" />
+</a><span class="current-time" id="current-time"></span>
+  </header>
+  <main>
+  <section id="contenido">
+  <nav class="menu-container"><i class="fas fa-mouse-pointer" style="color: deepskyblue; float: left;"></i>
+    <p class="aviso" onclick="openPopup()">No olvides que se puede ajustar la calidad</p>
+    <ul class="menu">
+      <li class="menu-item">
+        <a class="menu-link" href="https://eventosnodoondoooo.blogspot.com/2023/03/play2.html?=https://dce-ak-livewwdazn.akamaized.net/dashdrm/dazn-linear-016/stream.mpd&key=82f8e2a17dac44c0a18f660479349c59&key2=1b144f73e6fefe91cd05f850e2b589d0">
+          <div class="item">
+            <img alt="Logo del canal" class="channel-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/70/DAZN_F1_logo.png" />
+            <h2>D4ZN</h2>
+            <small>Disponible a nivel global/Latinoamérica</small>
+          </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="https://lu.motoreplaays.cloud/dzneu.html?=016">
+          <div class="item">
+            <img alt="Logo del canal" class="channel-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/70/DAZN_F1_logo.png" />
+            <h2>D4ZN</h2>
+            <small>Disponible a nivel global</small>
+          </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="https://freelivewithiu.blogspot.com/p/sky-f1.html">
+          <div class="item">
+            <img alt="Logo del canal" class="channel-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sky_Sport_F1_-_Logo_2020.svg/2560px-Sky_Sport_F1_-_Logo_2020.svg.png" />
+            <h2 id="channel-title2">Sky F1</h2>
+            <small>Disponible a nivel global</small>
+          </div>
+        </a>
+      </li>
+        <li class="menu-item">
+        <a class="menu-link" href="https://lu.motoreplaays.cloud/play.html?=https://getcdn.nowonline.com.br/Content/Channel/SPOBSPHD/dsc3/manifest.mpd&key=8abcd91330a241c57ddf4422fa6c5ab9&key2=0b683a8b6adda49df467230e76532740">
+          <div class="item">
+            <img alt="Logo del canal" class="channel-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/BandSports_logo.svg/1200px-BandSports_logo.svg.png" />
+            <h2 id="channel-title2">BandSports</h2>
+            <small>Disponible a nivel global</small>
+          </div>
+        </a>
+      </li>
+      <br />
+    </ul>
+  </nav>
+    <div class="social-media">
+      <a class="social-media-icon" href="https://twitter.com/nodoapps"><i class="bi bi-twitter"></i></a>
+      <a class="social-media-icon" href="https://instagram.com/newsnodo"><i class="bi bi-instagram"></i></a>
+       <a class="social-media-icon" href="https://bit.ly/motoplayapp"><i class="bi bi-telegram"></i></a>
+    </div>
+</section>
+  </main>
+    <br />
+  <script>
+  // Obtener el elemento del tiempo actual
+  var currentTimeElement = document.getElementById("current-time");
+
+  // Función para obtener la hora actual en formato HH:MM:SS
+  function getCurrentTime() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+
+    // Agregar un cero inicial si el número es menor a 10
+    hours = (hours < 10 ? "0" : "") + hours;
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+    seconds = (seconds < 10 ? "0" : "") + seconds;
+
+    // Construir la cadena de tiempo
+    var currentTimeString = hours + ":" + minutes;
+
+    // Actualizar el contenido del elemento
+    currentTimeElement.innerHTML = currentTimeString;
+  }
+
+  // Llamar a la función cada segundo para actualizar la hora
+  setInterval(getCurrentTime, 1000);
+</script>
+<div class="popup-container" id="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">X</span>
+    <iframe allowfullscreen="" height="100%" id="videoFrame" width="100%"></iframe>
+  </div>
+</div>
+<script>
+  function openPopup() {
+    var videoUrl = "https://www.youtube.com/embed/4TqwNTJZsnA?&autoplay=1&loop=1&rel=0&showinfo=0&color=blue&iv_load_policy=3&playlist=4TqwNTJZsnA&controls=0";  // Enlace de incrustación del video de YouTube con loop
+
+    // Obtener el elemento del popup y el iframe
+    var popup = document.getElementById("popup");
+    var videoFrame = document.getElementById("videoFrame");
+
+    // Establecer la URL del video en el iframe
+    videoFrame.src = videoUrl;
+
+    // Mostrar el popup
+    popup.style.display = "block";
+  }
+
+  function closePopup() {
+    // Ocultar el popup
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+
+    // Detener la reproducción del video al cerrar el popup
+    var videoFrame = document.getElementById("videoFrame");
+    videoFrame.src = "";
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var link1 = document.querySelector('#link1');
+    var link2 = document.querySelector('#link2');
+    var channelTitle1 = document.querySelector('#channel-title1');
+    var channelTitle2 = document.querySelector('#channel-title2');
+
+    if (link1.getAttribute('href') === '') {
+      channelTitle1.textContent = 'No disponible';
+    }
+
+    if (link2.getAttribute('href') === '') {
+      channelTitle2.textContent = 'No disponible';
+    }
+  });
+</script>
+</body>
+</html>
